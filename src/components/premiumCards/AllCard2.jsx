@@ -51,7 +51,7 @@ const AllCard2 = ({card, carts, setCarts}) => {
               ))}
             </ul>
 
-            <div className="mt-6">
+            <div className="mt-auto">
               <button onClick={handleAddCard} className="btn btn-primary btn-block rounded-3xl ">
                 {isAdd ? "Add To Card" : "But Now"}
               </button>
