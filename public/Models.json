@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Plan",
+    "description": "Perfect for individuals and freelancers just getting started.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "5 projects",
+      "10GB storage",
+      "Email support",
+      "Basic analytics",
+      "API access"
+    ],
+    "icon": "https://i.ibb.co.com/YBfdZK0R/social-media.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Plan",
+    "description": "Ideal for growing teams who need more power and flexibility.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited projects",
+      "100GB storage",
+      "Priority email support",
+      "Advanced analytics",
+      "API access",
+      "Custom integrations"
+    ],
+    "icon": "https://i.ibb.co.com/YBfdZK0R/social-media.png"
+  },
+  {
+    "id": 3,
+    "name": "Business Plan",
+    "description": "Built for scaling businesses with advanced collaboration needs.",
+    "price": 79.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited projects",
+      "500GB storage",
+      "24/7 live support",
+      "Full analytics suite",
+      "API access",
+      "Custom integrations",
+      "Team management",
+      "SSO login"
+    ],
+    "icon": "https://i.ibb.co.com/YBfdZK0R/social-media.png"
+  },
+  {
+    "id": 4,
+    "name": "Enterprise Plan",
+    "description": "Enterprise-grade solution for large organisations and agencies.",
+    "price": 199.99,
+    "period": "monthly",
+    "tag": "Premium",
+    "tagType": "premium",
+    "features": [
+      "Unlimited everything",
+      "5TB storage",
+      "Dedicated account manager",
+      "Custom reporting",
+      "On-premise deployment",
+      "SLA guarantee",
+      "Advanced security",
+      "Custom contracts"
+    ],
+    "icon": "https://i.ibb.co.com/mCCCjH8q/writing-2327400-1.png"
+  },
+  {
+    "id": 5,
+    "name": "Annual Starter",
+    "description": "All Starter features at a discounted yearly rate.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "Save 20%",
+    "tagType": "new",
+    "features": [
+      "5 projects",
+      "10GB storage",
+      "Email support",
+      "Basic analytics",
+      "API access"
+    ],
+    "icon": "https://i.ibb.co.com/YBfdZK0R/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "Annual Pro",
+    "description": "All Pro features bundled into one great yearly price.",
+    "price": 299.99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited projects",
+      "100GB storage",
+      "Priority support",
+      "Advanced analytics",
+      "API access",
+      "Custom integrations"
+    ],
+    "icon": "https://i.ibb.co.com/BFJvv2T/portfolio.png"
+  },
+  {
+    "id": 7,
+    "name": "Lifetime Deal",
+    "description": "Pay once, use forever. No recurring fees, ever.",
+    "price": 499.99,
+    "period": "one-time",
+    "tag": "Limited",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited projects",
+      "200GB storage",
+      "Lifetime updates",
+      "Priority support",
+      "API access",
+      "All future features included"
+    ],
+    "icon": "https://i.ibb.co.com/YF4ZCCPG/operation.png"
+  },
+  {
+    "id": 8,
+    "name": "Student Plan",
+    "description": "Affordable plan designed specifically for students and educators.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "3 projects",
+      "5GB storage",
+      "Community support",
+      "Basic analytics",
+      "Education resources"
+    ],
+    "icon": "https://i.ibb.co.com/JRt4Sfx7/design-tool.png"
+  },
+  {
+    "id": 9,
+    "name": "Agency Plan",
+    "description": "Manage multiple clients and campaigns under one roof.",
+    "price": 149.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "50 client workspaces",
+      "1TB storage",
+      "White-label branding",
+      "Client reporting",
+      "Team roles & permissions",
+      "Priority support",
+      "API access"
+    ],
+    "icon": "https://i.ibb.co.com/mCCCjH8q/writing-2327400-1.png"
+  },
+  {
+    "id": 10,
+    "name": "Free Forever",
+    "description": "Get started for free with no credit card required.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "Free",
+    "tagType": "new",
+    "features": [
+      "1 project",
+      "1GB storage",
+      "Community support",
+      "Basic analytics"
+    ],
+    "icon": "https://i.ibb.co.com/mCCCjH8q/writing-2327400-1.png"
+  }
+]
