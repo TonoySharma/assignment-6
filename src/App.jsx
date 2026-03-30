@@ -24,8 +24,11 @@ const modelPromise = getModels()
 
 
 function App() {
-  const [activeTap, setActiveTap] = useState ("Products")
-  console .log (activeTap);
+  const [activeTap, setActiveTap] = useState ("Products");
+  // console .log (activeTap);
+  const [carts, setCarts] = useState([])
+  // console.log(carts);
+
 
   return (
    <>
@@ -39,9 +42,9 @@ function App() {
             <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full" aria-label="Cart (0)" onClick={()=> setActiveTap("card")} />
           </div>
 
-    {activeTap === "Products" && <AllCards modelPromise={modelPromise}></AllCards>}
+    {activeTap === "Products" && <AllCards modelPromise={modelPromise} carts={carts} setCarts={setCarts}></AllCards>}
 
-    {activeTap === "card" && <EmptyCard></EmptyCard>}
+    {activeTap === "card" && <EmptyCard carts={carts}></EmptyCard>}
 
     <GetStarted></GetStarted>
     <Footer1></Footer1>

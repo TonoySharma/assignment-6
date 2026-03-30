@@ -17,11 +17,11 @@ const GetStarted = () => {
       </div>
 
       {/* Cards */}
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto mt-10'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto mt-10 '>
         
         {/* Card 1 */}
-        <div className='border p-6 rounded-xl bg-gray-100'>
-          <div className='flex justify-end'>
+        <div className='border border-gray-300 shadow p-6 rounded-xl bg-gray-100 hover:shadow-lg transition'>
+          <div className='flex justify-end '>
             <p className='font-bold px-3 py-1 rounded-full bg-[#9514FA] text-white'>01</p>
           </div>
 
@@ -38,7 +38,7 @@ const GetStarted = () => {
         </div>
 
         {/* Card 2 */}
-        <div className='border p-6 rounded-xl bg-gray-100'>
+        <div className='border border-gray-300 shadow p-6 rounded-xl bg-gray-100 hover:shadow-lg transition'>
           <div className='flex justify-end'>
             <p className='font-bold px-3 py-1 rounded-full bg-[#9514FA] text-white'>02</p>
           </div>
@@ -56,7 +56,7 @@ const GetStarted = () => {
         </div>
 
         {/* Card 3 */}
-        <div className='border p-6 rounded-xl bg-gray-100'>
+        <div className='border border-gray-300 shadow p-6 rounded-xl bg-gray-100 hover:shadow-lg transition'>
           <div className='flex justify-end'>
             <p className='font-bold px-3 py-1 rounded-full bg-[#9514FA] text-white'>03</p>
           </div>
@@ -81,10 +81,11 @@ const GetStarted = () => {
             <p className='text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
           </div>
 
-          {/* card */}
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto bg-gray-100'>
+       {/* card */}
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto'>
+
    {/* card 1*/}
-     <div className='border p-6 rounded-xl shadow-sm hover:shadow-lg transition'>
+     <div className='border p-6 rounded-xl border-gray-300 shadow hover:shadow-lg transition bg-gray-100'>
     
     {/* Title */}
     <h1 className='font-bold text-2xl'>Starter</h1>
@@ -118,7 +119,7 @@ const GetStarted = () => {
 
    </div>
    {/* card 2 */}
-     <div className='border p-6 rounded-xl shadow-sm hover:shadow-lg transition bg-[#9514FA] text-white'>
+     <div className='border p-6 rounded-xl border-gray-300 shadow hover:shadow-lg transition bg-[#9514FA] text-white'>
          <div className='text-center justify-center flex -mt-10'>
             <p className='text-red-500 bg-[#FEF3C6] w-fit py-1 px-3 rounded-full'>Most Popular</p>
           </div>
@@ -156,7 +157,7 @@ const GetStarted = () => {
 
    </div>
    {/* card 3 */}
-     <div className='border p-6 rounded-xl shadow-sm hover:shadow-lg transition'>
+     <div className='border p-6 rounded-xl border-gray-300 shadow hover:shadow-lg transition bg-gray-100'>
     
     {/* Title */}
     <h1 className='font-bold text-2xl'>Starter</h1>

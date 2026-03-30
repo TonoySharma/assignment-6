@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 
-const AllCard2 = ({card}) => {
+const AllCard2 = ({card, carts, setCarts}) => {
       const [isAdd, setIsAdd] = useState(false)
       const handleAddCard = () => {
             setIsAdd(true)
+            setCarts([...carts, card])
       }
     return (
-         <div key={card.id} className="card w-96 bg-gray-100 shadow-sm">
+         <div key={card.id} className="card w-96 bg-gray-100 shadow-sm hover:shadow-lg transition">
           <div className="card-body border border-gray-300 rounded-xl">
 
             <div className='flex items-center justify-between'>
