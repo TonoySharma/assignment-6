@@ -10,11 +10,11 @@ const Footer1 = () => {
                  </div>
 
                  {/* button */}
-            <div className=' flex gap-5 items-center justify-center '>
-                 <button className='bg-white cursor-pointer  p-4 rounded-full text-[#9514FA] font-bold'>Explore Products</button>
+            <div className=' flex gap-4 items-center justify-center '>
+                 <button className='bg-white cursor-pointer p-4 rounded-full text-[#9514FA] font-bold'>Explore Products</button>
             
-                <div className='flex  gap-2 border w-fit p-4 rounded-full font-bold items-center'>
-                  <button className='cursor-pointer'>View Pricing</button>
+                <div className='flex w-fit font-bold items-center '>
+                  <button className='cursor-pointer border py-4 px-6  rounded-full '>View Pricing</button>
                </div>
             </div>
             <h2 className='text-white py-5'>14-day free trial • No credit card required • Cancel anytime</h2>

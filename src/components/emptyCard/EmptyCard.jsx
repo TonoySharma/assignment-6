@@ -11,7 +11,7 @@ const handlePayment = () => {
     setCarts([]);
 
 
-    
+
           toast.success("added to card!",{
               autoClose: 1500,
               theme: "dark",
@@ -78,8 +78,8 @@ setCarts(filterArray)
       </div>
 
       {/* total count */}
-      <div className='py-4 flex justify-between'>
-         <h2 className='font-semibold'>Total:</h2>
+      <div className='py-4 flex justify-between bg-base-200 px-4 rounded-3xl border border-gray-200 mt-10'>
+         <h2 className='font-semibold '>Total:</h2>
          <p className='font-semibold'>${totalPrice}</p>
       </div>
       {/* button */}

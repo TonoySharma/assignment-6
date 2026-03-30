@@ -28,7 +28,8 @@ function App() {
   // console .log (activeTap);
   const [carts, setCarts] = useState([])
   // console.log(carts);
-
+ const [selectedType, setSelectedType] = useState("available");
+ console.log(selectedType);
 
   return (
    <>
@@ -38,8 +39,14 @@ function App() {
     
             {/* taps button */}
           <div className="tabs tabs-box justify-center mt-8 bg-transparent mb-10">
-            <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full bg-[#9514FA] text-white font-semibold" aria-label="Products" onClick={()=> setActiveTap("Products")} />
-            <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full font-semibold" aria-label={`cart (${carts.length})`} onClick={()=> setActiveTap("card")} />
+            <input type="radio" name="my_tabs_1" className={`tab w-40 rounded-full ${selectedType === "available" ? "bg-purple-700 text-white" :"text-black"} font-semibold`} aria-label="Products" onClick={() => {
+              setActiveTap("Products");
+              setSelectedType("available");
+            }}/>
+
+            <input type="radio" name="my_tabs_1" className={`tab w-40 rounded-full ${selectedType === "selected" ? "bg-purple-700 text-white" :"text-black"} font-semibold`} aria-label={`cart (${carts.length})`} onClick={()=> {setActiveTap("card");
+              setSelectedType("selected");
+            }} />
           </div>
 
     {activeTap === "Products" && <AllCards modelPromise={modelPromise} carts={carts} setCarts={setCarts}></AllCards>}

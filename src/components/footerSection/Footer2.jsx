@@ -38,9 +38,9 @@ const Footer2 = () => {
                     <li>Integrations</li>
                  </ul>
             </div>
-            <div>
-                <h2 className='font-bold text-xl mb-6'>Social Links :</h2>
-                <div className='flex gap-4 '>
+            <div className=''>
+                <h2 className='font-bold text-xl mb-6 justify-end flex'>Social Links :</h2>
+                <div className='flex gap-4 justify-end'>
                     <img src={facebookIcon} alt=""  className='cursor-pointer rounded-full'/>
                     <img src={instagramIcon} alt=""  className='cursor-pointer rounded-full'/>
                     <img src={twitterIcon} alt=""  className='cursor-pointer rounded-full'/>
@@ -51,7 +51,7 @@ const Footer2 = () => {
             <div className='border-t-2 border-t-gray-600 container mx-auto'>
                  <div className='justify-between flex mt-8'>
                     <h1>© 2026 Digitools. All rights reserved.</h1>
-                <div className=''>
+                <div>
                     <ul className='flex gap-10'>
                         <li>Privacy Policy</li>
                         <li>Terms of Service</li>

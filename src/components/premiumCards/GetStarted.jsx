@@ -82,7 +82,7 @@ const GetStarted = () => {
           </div>
 
        {/* card */}
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto h-full items-stretch'>
 
    {/* card 1*/}
      <div className='border p-6 rounded-xl border-gray-300 shadow hover:shadow-lg transition bg-gray-100'>
@@ -98,7 +98,7 @@ const GetStarted = () => {
     </div>
 
     {/* Features */}
-    <div className='mt-8 space-y-3'>
+    <div className='mt-6 space-y-3'>
       {[
         "Access to 10 free tools",
         "Basic templates",
@@ -113,7 +113,7 @@ const GetStarted = () => {
     </div>
 
     {/* Button */}
-    <button className='btn btn-outline w-full mt-8 rounded-full text-white bg-[#9514FA]'>
+    <button className='btn btn-outline w-full mt-17 rounded-full text-white bg-[#9514FA]'>
       Get Started Free
     </button>
 
@@ -134,7 +134,7 @@ const GetStarted = () => {
     </div>
 
     {/* Features */}
-    <div className='mt-8 space-y-3'>
+    <div className='mt-6 space-y-3'>
       {[
         "Access to all premium tools",
         "Unlimited templates",
@@ -151,7 +151,7 @@ const GetStarted = () => {
     </div>
 
     {/* Button */}
-    <button className='btn btn-outline w-full mt-8 rounded-full bg-white text-[#9514FA]'>
+    <button className='btn btn-outline mt-1 w-full  rounded-full bg-white text-[#9514FA]'>
       Start Pro Trial
     </button>
 
@@ -170,7 +170,7 @@ const GetStarted = () => {
     </div>
 
     {/* Features */}
-    <div className='mt-8 space-y-3'>
+    <div className='mt-6 space-y-3'>
       {[
         "Everything in Pro",
         "Team collaboration",
@@ -187,7 +187,7 @@ const GetStarted = () => {
     </div>
 
     {/* Button */}
-    <button className='btn btn-outline w-full mt-8 rounded-full bg-[#9514FA] text-white'>
+    <button className='btn btn-outline w-full mt-auto rounded-full bg-[#9514FA] text-white'>
      Contact Sales
     </button>
 
