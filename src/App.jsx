@@ -38,13 +38,13 @@ function App() {
     
             {/* taps button */}
           <div className="tabs tabs-box justify-center mt-8 bg-transparent mb-10">
-            <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full bg-[#9514FA] text-white" aria-label="Products" onClick={()=> setActiveTap("Products")} />
-            <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full" aria-label="Cart (0)" onClick={()=> setActiveTap("card")} />
+            <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full bg-[#9514FA] text-white font-semibold" aria-label="Products" onClick={()=> setActiveTap("Products")} />
+            <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full font-semibold" aria-label={`cart (${carts.length})`} onClick={()=> setActiveTap("card")} />
           </div>
 
     {activeTap === "Products" && <AllCards modelPromise={modelPromise} carts={carts} setCarts={setCarts}></AllCards>}
 
-    {activeTap === "card" && <EmptyCard carts={carts}></EmptyCard>}
+    {activeTap === "card" && <EmptyCard carts={carts} setCarts={setCarts}></EmptyCard>}
 
     <GetStarted></GetStarted>
     <Footer1></Footer1>

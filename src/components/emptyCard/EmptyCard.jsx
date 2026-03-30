@@ -2,11 +2,20 @@ import React from 'react';
 import { AiOutlineExclamationCircle } from 'react-icons/ai';
 import { RiDeleteBin5Fill } from 'react-icons/ri';
 
-const EmptyCard = ({ carts }) => {
+const EmptyCard = ({ carts, setCarts }) => {
 //   console.log(carts);
    const totalPrice = carts.reduce((sum, item) => sum +item.price, 0)
-   console.log(totalPrice);
+//    console.log(totalPrice);
+const handlePayment = () => {
+    setCarts([]);
+};
 
+const handleDelete = (deleteItem) => {
+// console.log(deleteItem);
+const filterArray = carts.filter(cart => cart.id !== deleteItem.id )
+// console.log(filterArray);
+setCarts(filterArray)
+}
 
 
   return (
@@ -16,7 +25,8 @@ const EmptyCard = ({ carts }) => {
 
       {/* Empty state */}
       {carts?.length === 0 && (
-        <div className=' mt-3'>
+        <div className='mt-20'>
+            {/* react icon */}
            <div className='flex items-center justify-center'>
              <AiOutlineExclamationCircle />
            </div>
@@ -26,9 +36,9 @@ const EmptyCard = ({ carts }) => {
 
       {/* Cart Items */}
       <div className='mt-6 space-y-4'>
-        {carts?.map((item, index) => (
+        {carts?.map((item, ind) => (
           <div
-            key={index}
+            key={ind}
             className='flex items-center justify-between rounded-2xl bg-gray-100 p-4 shadow border-t-3 border-green-600 hover:shadow-lg transition'
           >
             
@@ -43,20 +53,20 @@ const EmptyCard = ({ carts }) => {
             </div>
 
             {/* Delete button */}
-            <div className='border border-gray-300 p-3 rounded-full cursor-pointer hover:bg-red-400 hover:text-white transition'>
+            <div onClick={()=>handleDelete (item)} className='border border-gray-300 p-3 rounded-full cursor-pointer hover:bg-red-400 hover:text-white transition'>
               <RiDeleteBin5Fill />
             </div>
-
           </div>
-          
         ))}
       </div>
+
+      {/* total count */}
       <div className='py-4 flex justify-between'>
-         <h2>Total:</h2>
-         <p>$78</p>
+         <h2 className='font-semibold'>Total:</h2>
+         <p className='font-semibold'>${totalPrice}</p>
       </div>
       {/* button */}
-     <div className="mt-6 flex justify-center ">
+     <div onClick={ handlePayment } className="mt-6 flex justify-center">
         <button className="btn bg-[#9514FA]  rounded-4xl text-white py-5 px-20">Proceed to Checkout</button>
     </div>
 
