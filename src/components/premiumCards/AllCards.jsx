@@ -9,7 +9,7 @@ const AllCards = ({ modelPromise, carts, setCarts }) => {
 
   return (
 
-    <div className="container mx-auto grid grid-cols-4 gap-6">
+    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {models.map((card) => (
         <AllCard2 key={card.id} card={card} carts={carts} setCarts={setCarts}></AllCard2>
       ))}

@@ -1,13 +1,33 @@
 import React, { useState } from 'react';
+import { Slide, toast } from 'react-toastify';
 
 const AllCard2 = ({card, carts, setCarts}) => {
       const [isAdd, setIsAdd] = useState(false)
       const handleAddCard = () => {
             setIsAdd(true)
+      const isFound = carts.find(item => item.id ===card.id )
+        // console.log(isFound);
+        if(isFound) {
+          toast.error("this card already in add!",{
+             autoClose: 1500,
+              theme: "dark",
+              position: "top-center",
+              transition: Slide,
+          });
+          return;
+        }
+
             setCarts([...carts, card])
+            toast.success("added to card!",{
+              autoClose: 1500,
+              theme: "dark",
+              position: "top-center",
+              transition: Slide,
+            });
+
       }
     return (
-         <div key={card.id} className="card w-96 bg-gray-100 shadow-sm hover:shadow-lg transition">
+         <div key={card.id} className="card w-full bg-gray-100 shadow-sm hover:shadow-lg transition">
           <div className="card-body border border-gray-300 rounded-xl">
 
             <div className='flex items-center justify-between'>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineExclamationCircle } from 'react-icons/ai';
 import { RiDeleteBin5Fill } from 'react-icons/ri';
+import { Slide, toast } from 'react-toastify';
 
 const EmptyCard = ({ carts, setCarts }) => {
 //   console.log(carts);
@@ -8,6 +9,16 @@ const EmptyCard = ({ carts, setCarts }) => {
 //    console.log(totalPrice);
 const handlePayment = () => {
     setCarts([]);
+
+
+    
+          toast.success("added to card!",{
+              autoClose: 1500,
+              theme: "dark",
+              position: "top-center",
+              transition: Slide,
+            });
+
 };
 
 const handleDelete = (deleteItem) => {
@@ -15,6 +26,12 @@ const handleDelete = (deleteItem) => {
 const filterArray = carts.filter(cart => cart.id !== deleteItem.id )
 // console.log(filterArray);
 setCarts(filterArray)
+   toast.success("added to card!",{
+              autoClose: 1500,
+              theme: "dark",
+              position: "top-center",
+              transition: Slide,
+            });
 }
 
 
