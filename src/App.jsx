@@ -35,12 +35,14 @@ function App() {
     
             {/* taps button */}
           <div className="tabs tabs-box justify-center mt-8 bg-transparent mb-10">
-            <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full bg-[#9514FA] text-white" aria-label="Products" />
+            <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full bg-[#9514FA] text-white" aria-label="Products" onClick={()=> setActiveTap("Products")} />
             <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full" aria-label="Cart (0)" onClick={()=> setActiveTap("card")} />
           </div>
 
-    <AllCards modelPromise={modelPromise}></AllCards>
-    <EmptyCard></EmptyCard>
+    {activeTap === "Products" && <AllCards modelPromise={modelPromise}></AllCards>}
+
+    {activeTap === "card" && <EmptyCard></EmptyCard>}
+
     <GetStarted></GetStarted>
     <Footer1></Footer1>
     <Footer2></Footer2>
