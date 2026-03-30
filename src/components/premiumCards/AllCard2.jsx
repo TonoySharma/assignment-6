@@ -28,7 +28,7 @@ const AllCard2 = ({card, carts, setCarts}) => {
       }
     return (
          <div key={card.id} className="card w-full bg-gray-100 shadow-sm hover:shadow-lg transition">
-          <div className="card-body border border-gray-300 rounded-xl">
+          <div className="card-body border h-full items-stretch border-gray-300 rounded-xl">
 
             <div className='flex items-center justify-between'>
               <img src={card.icon} alt="" />
@@ -52,7 +52,7 @@ const AllCard2 = ({card, carts, setCarts}) => {
             </ul>
 
             <div className="mt-6">
-              <button onClick={handleAddCard} className="btn btn-primary btn-block rounded-3xl">
+              <button onClick={handleAddCard} className="btn btn-primary btn-block rounded-3xl ">
                 {isAdd ? "Add To Card" : "But Now"}
               </button>
             </div>

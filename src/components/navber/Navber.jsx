@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navber = ({ carts }) => {
   return (
-    <div className="navbar container mx-auto bg-gray-100 p-3 rounded-2xl">
+    <div className="navbar bg-gray-100 p-3 rounded-2xl">
       <div className="flex-1">
         <a className="btn btn-ghost font-bold text-2xl text-[#9514fA]">
           DigiTools

@@ -32,7 +32,7 @@ function App() {
 
   return (
    <>
-    <Navber></Navber>
+    <Navber carts={carts}></Navber>
     <Banner></Banner>
     <ActiveCount></ActiveCount>
     
