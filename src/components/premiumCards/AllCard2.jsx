@@ -8,7 +8,7 @@ const AllCard2 = ({card, carts, setCarts}) => {
       const isFound = carts.find(item => item.id ===card.id )
         // console.log(isFound);
         if(isFound) {
-          toast.error("this card already in add!",{
+          toast.error("This Card Already In Add!",{
              autoClose: 1500,
               theme: "dark",
               position: "top-center",
@@ -18,7 +18,7 @@ const AllCard2 = ({card, carts, setCarts}) => {
         }
 
             setCarts([...carts, card])
-            toast.success("added to card!",{
+            toast.success("Added To Card!",{
               autoClose: 1500,
               theme: "dark",
               position: "top-center",
@@ -31,8 +31,8 @@ const AllCard2 = ({card, carts, setCarts}) => {
           <div className="card w-full h-[500px] p-5 bg-gray-100 shadow-sm hover:shadow-lg transition overflow-hidden">
 
             <div className='flex items-center justify-between'>
-              <img src={card.icon} alt="" />
-              <span className="badge badge-xs badge-warning">
+              <img src={card.icon} alt=""  className='mb-2'/>
+              <span className="badge badge-xs badge-warning text-black">
                 {card.tag || "Best Seller"}
               </span>
             </div>
@@ -53,7 +53,7 @@ const AllCard2 = ({card, carts, setCarts}) => {
 
             <div className="mt-auto">
               <button onClick={handleAddCard} className="btn bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3] btn-block text-white rounded-3xl ">
-                {isAdd ? "Add To Card" : "But Now"}
+                {isAdd ? "Add To Card" : "Buy Now"}
               </button>
             </div>
 

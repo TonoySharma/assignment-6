@@ -21,8 +21,6 @@ const modelPromise = getModels()
 
 
 
-
-
 function App() {
   const [activeTap, setActiveTap] = useState ("Products");
   // console .log (activeTap);

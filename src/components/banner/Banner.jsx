@@ -2,6 +2,7 @@ import React from 'react';
 import blueIcon from "../../assets/blue-icon.png";
 import playIcon from "../../assets/Play.png";
 import bannerImg from "../../assets/banner.png";
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Banner = () => {
     return (
@@ -9,8 +10,8 @@ const Banner = () => {
 
             <div className='space-y-5 w-full text-center lg:text-left'>
                 
-                <div className='flex items-center justify-center lg:justify-start gap-2 bg-[#E1E7FF] px-3 py-1 rounded-full w-fit mx-auto lg:mx-0'>
-                    <img src={blueIcon} alt="icon" className='w-6' />
+                <div className='flex items-center justify-center lg:justify-start gap-2 bg-[#E1E7FF] py-1 rounded-full w-fit mx-auto lg:mx-0 px-4'>
+                    <img src={blueIcon} alt="icon" className='w-6 mt-2' />
                     <h2 className='font-semibold text-[#4f39f6] text-sm md:text-base'>
                         New: AI-Powered Tools Available
                     </h2>
@@ -22,7 +23,7 @@ const Banner = () => {
                     </h1>
 
                     <p className='text-[#627382] text-sm sm:text-base'>
-                        Access premium AI tools, design assets, templates, and productivity 
+                        Access premium AI tools, design assets, templates, and productivity<br></br> 
                         software—all in one place. Start creating faster today.
                     </p>
                 </div>
@@ -30,8 +31,8 @@ const Banner = () => {
                 {/* Buttons */}
                 <div className='py-6 flex flex-col sm:flex-row items-center lg:items-start gap-4 justify-center lg:justify-start'>
                     
-                    <button className='bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3] px-6 py-3 rounded-full text-white font-bold w-full sm:w-auto'>
-                        Explore Products
+                    <button className='bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3] px-6 py-3 rounded-full text-white font-bold w-full sm:w-auto flex items-center gap-2 cursor-pointer'>
+                        Explore Products<AiOutlineArrowRight />
                     </button>
 
                     <div className='flex gap-2 border border-[#9514FA] px-6 py-3 rounded-full text-[#9514FA] font-bold items-center justify-center w-full sm:w-auto'>
@@ -43,7 +44,7 @@ const Banner = () => {
 
             {/* Right Image */}
             <div className='w-full flex justify-center lg:justify-end'>
-                <img src={bannerImg} alt="banner" className='max-w-full h-auto'/>
+                <img src={bannerImg} alt="banner" className='max-w-full h-auto shadow-xl'/>
             </div>
 
         </div>

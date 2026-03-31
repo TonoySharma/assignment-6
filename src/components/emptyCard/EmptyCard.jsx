@@ -10,9 +10,7 @@ const EmptyCard = ({ carts, setCarts }) => {
 const handlePayment = () => {
     setCarts([]);
 
-
-
-          toast.success("added to card!",{
+          toast.success("Payment Successfully!",{
               autoClose: 1500,
               theme: "dark",
               position: "top-center",
@@ -26,7 +24,7 @@ const handleDelete = (deleteItem) => {
 const filterArray = carts.filter(cart => cart.id !== deleteItem.id )
 // console.log(filterArray);
 setCarts(filterArray)
-   toast.success("added to card!",{
+   toast.success("Delete To Card!",{
               autoClose: 1500,
               theme: "dark",
               position: "top-center",
