@@ -5,35 +5,47 @@ import bannerImg from "../../assets/banner.png";
 
 const Banner = () => {
     return (
-        <div className='flex container mx-auto items-center' >
-        <div className='container mx-auto space-y-5'>
-                <div className='flex gap-1 mt-5 bg-[#E1E7FF] px-3 rounded-full  w-fit'>
-                <img src={blueIcon} alt="icon" className='w-8 mt-2' />
-                <h2 className='font-semibold text-[#4f39f6] mt-2 '>New: AI-Powered Tools Available</h2>
+        <div className='flex flex-col lg:flex-row container mx-auto items-center px-4 py-10 gap-10'>
+
+            <div className='space-y-5 w-full text-center lg:text-left'>
+                
+                <div className='flex items-center justify-center lg:justify-start gap-2 bg-[#E1E7FF] px-3 py-1 rounded-full w-fit mx-auto lg:mx-0'>
+                    <img src={blueIcon} alt="icon" className='w-6' />
+                    <h2 className='font-semibold text-[#4f39f6] text-sm md:text-base'>
+                        New: AI-Powered Tools Available
+                    </h2>
                 </div>
 
                 <div className='space-y-4'>
-                     <h1 className='font-bold text-5xl '>Supercharge Your Digital Workflow </h1>
-                <p className='text-[#627382]'>Access premium AI tools, design assets, templates, and productivity <br></br>
-                   software— all in one place. Start creating faster today.Explore Products</p>
-                </div>
-                          
-                    {/* button */}
+                    <h1 className='font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight'>
+                        Supercharge Your Digital Workflow
+                    </h1>
 
-                 <div className='py-6 flex gap-5'>
-                       <button className='bg-[#9514FA] p-4 rounded-full text-white cursor-pointer font-bold'>Explore Products</button>
-
-                     <div className='flex gap-2 border border-[#9514FA] w-fit p-4 rounded-full text-[#9514FA]  font-bold items-center'>
-                         <img src={playIcon} alt="play" className='w-5 h-5 object-contain' />
-                         <button className='cursor-pointer'>Watch Demo</button>
-                   </div>
+                    <p className='text-[#627382] text-sm sm:text-base'>
+                        Access premium AI tools, design assets, templates, and productivity 
+                        software—all in one place. Start creating faster today.
+                    </p>
                 </div>
-       </div>
 
-              {/* banner image */}
-                <div className='container mx-auto mt-20 flex justify-end'>
-                    <img src={bannerImg} alt="banner" />
+                {/* Buttons */}
+                <div className='py-6 flex flex-col sm:flex-row items-center lg:items-start gap-4 justify-center lg:justify-start'>
+                    
+                    <button className='bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3] px-6 py-3 rounded-full text-white font-bold w-full sm:w-auto'>
+                        Explore Products
+                    </button>
+
+                    <div className='flex gap-2 border border-[#9514FA] px-6 py-3 rounded-full text-[#9514FA] font-bold items-center justify-center w-full sm:w-auto'>
+                        <img src={playIcon} alt="play" className='w-5 h-5 object-contain' />
+                        <button className='cursor-pointer'>Watch Demo</button>
+                    </div>
                 </div>
+            </div>
+
+            {/* Right Image */}
+            <div className='w-full flex justify-center lg:justify-end'>
+                <img src={bannerImg} alt="banner" className='max-w-full h-auto'/>
+            </div>
+
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineExclamationCircle } from 'react-icons/ai';
+import { IoIosWarning } from 'react-icons/io';
 import { RiDeleteBin5Fill } from 'react-icons/ri';
 import { Slide, toast } from 'react-toastify';
 
@@ -45,9 +45,9 @@ setCarts(filterArray)
         <div className='mt-20'>
             {/* react icon */}
            <div className='flex items-center justify-center'>
-             <AiOutlineExclamationCircle />
+             <IoIosWarning className='w-7 h-8' />
            </div>
-            <p className='text-gray-500 text-center mt-3'>Your cart is empty</p>
+            <p className='text-gray-500 text-center mt-3 text-xl'>Your cart is empty</p>
         </div>
       )}
 
@@ -84,7 +84,7 @@ setCarts(filterArray)
       </div>
       {/* button */}
      <div onClick={ handlePayment } className="mt-6 flex justify-center">
-        <button className="btn bg-[#9514FA]  rounded-4xl text-white py-5 px-20">Proceed to Checkout</button>
+        <button className="btn bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3]  rounded-4xl text-white py-5 px-20">Proceed to Checkout</button>
     </div>
 
     </div>

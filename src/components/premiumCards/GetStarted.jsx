@@ -22,7 +22,7 @@ const GetStarted = () => {
         {/* Card 1 */}
         <div className='border border-gray-300 shadow p-6 rounded-xl bg-gray-100 hover:shadow-lg transition'>
           <div className='flex justify-end '>
-            <p className='font-bold px-3 py-1 rounded-full bg-[#9514FA] text-white'>01</p>
+            <p className='font-bold px-3 py-1 rounded-full bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3] text-white'>01</p>
           </div>
 
           <div className='flex justify-center my-4'>
@@ -40,7 +40,7 @@ const GetStarted = () => {
         {/* Card 2 */}
         <div className='border border-gray-300 shadow p-6 rounded-xl bg-gray-100 hover:shadow-lg transition'>
           <div className='flex justify-end'>
-            <p className='font-bold px-3 py-1 rounded-full bg-[#9514FA] text-white'>02</p>
+            <p className='font-bold px-3 py-1 rounded-full bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3] text-white'>02</p>
           </div>
 
           <div className='flex justify-center my-4'>
@@ -58,7 +58,7 @@ const GetStarted = () => {
         {/* Card 3 */}
         <div className='border border-gray-300 shadow p-6 rounded-xl bg-gray-100 hover:shadow-lg transition'>
           <div className='flex justify-end'>
-            <p className='font-bold px-3 py-1 rounded-full bg-[#9514FA] text-white'>03</p>
+            <p className='font-bold px-3 py-1 rounded-full bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3] text-white'>03</p>
           </div>
 
           <div className='flex justify-center my-4'>
@@ -113,13 +113,13 @@ const GetStarted = () => {
     </div>
 
     {/* Button */}
-    <button className='btn btn-outline w-full mt-17 rounded-full text-white bg-[#9514FA]'>
+    <button className='btn btn-outline w-full mt-17 rounded-full text-white bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3]'>
       Get Started Free
     </button>
 
    </div>
    {/* card 2 */}
-     <div className='border p-6 rounded-xl border-gray-300 shadow hover:shadow-lg transition bg-[#9514FA] text-white'>
+     <div className='border p-6 rounded-xl border-gray-300 shadow hover:shadow-lg transition bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3] text-white'>
          <div className='text-center justify-center flex -mt-10'>
             <p className='text-red-500 bg-[#FEF3C6] w-fit py-1 px-3 rounded-full'>Most Popular</p>
           </div>
@@ -151,7 +151,7 @@ const GetStarted = () => {
     </div>
 
     {/* Button */}
-    <button className='btn btn-outline mt-1 w-full  rounded-full bg-white text-[#9514FA]'>
+    <button className='btn btn-outline mt-1 w-full rounded-full bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3]'>
       Start Pro Trial
     </button>
 
@@ -187,7 +187,7 @@ const GetStarted = () => {
     </div>
 
     {/* Button */}
-    <button className='btn btn-outline w-full mt-auto rounded-full bg-[#9514FA] text-white'>
+    <button className='btn btn-outline w-full mt-auto rounded-full bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3] text-white'>
      Contact Sales
     </button>
 

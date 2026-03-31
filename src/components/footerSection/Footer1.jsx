@@ -3,7 +3,7 @@ import React from 'react';
 const Footer1 = () => {
     return (
         <div className='mt-20'>
-            <div className='bg-[#9514FA] text-white text-center'>
+            <div className='bg-gradient-to-r from-[#6A5AF9] to-[#A43BF3] text-white text-center'>
                  <div className='py-20'>
                 <h1 className='text-5xl font-bold'>Ready to Transform Your Workflow?</h1>
                 <p>Join thousands of professionals who are already using Digitools to work smarter.<br></br>Start your free trial today.</p>
