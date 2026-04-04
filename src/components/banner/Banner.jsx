@@ -37,7 +37,7 @@ const Banner = () => {
 
                     <div className='flex gap-2 border border-[#9514FA] px-6 py-3 rounded-full text-[#9514FA] font-bold items-center justify-center w-full sm:w-auto'>
                         <img src={playIcon} alt="play" className='w-5 h-5 object-contain' />
-                        <button className='cursor-pointer'>Watch Demo</button>
+                        <button className='cursor-pointer '>Watch Demo</button>
                     </div>
                 </div>
             </div>

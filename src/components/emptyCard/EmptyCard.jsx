@@ -62,7 +62,7 @@ setCarts(filterArray)
               <img src={item.icon} alt="icon" className='w-12 h-12' />
 
               <div>
-                <h2 className='font-semibold'>{item.name}</h2>
+                <h2 className='font-semibold text-black'>{item.name}</h2>
                 <p className='font-medium'>${item.price}</p>
               </div>
             </div>
